@@ -16,8 +16,8 @@
 
 * 2 spaces (no tabs)
 * semi-colons \*optional\*
-  - do use [uglify][uglify] for production deployments 
-  - do use [jshint][jshint] for checking missing semicolons and linting code (also use a `.jshintrc` file and share it in the repo with your team; make sure everyone has JSHint plugins on their IDE as well that consume this config file) 
+  - do use [uglify][uglify] for production deployments
+  - do use [jshint][jshint] for checking missing semicolons and linting code (also use a `.jshintrc` file and share it in the repo with your team; make sure everyone has JSHint plugins on their IDE as well that consume this config file)
   - **do not mix usage of semi-colons and no semi-colons**
 * use apostrophes instead of quotes (when possible)
 * peer-review occasionally \*optional for solo projects\*
@@ -29,9 +29,9 @@
 * always return early (you don't always need brackets `{}`)
 
     ```js
-    // good   
+    // good
     if (err) return next(err);
-          
+
     // bad
     if (err) {
       next(err);
@@ -50,9 +50,9 @@
     // bad
     if ( foo )
       return getBar( "bad" );
-      
+
     ```
-    
+
 * see [Git Workflow](#git-workflow) below
 
 
@@ -99,7 +99,7 @@
       * [lock down your server heavily][ubuntu-security]
       * **do not allow root nor password-based log in attempts**
       * **do not require a VPN to connect to the server (should be end-user's responsibility for secure connection)**
-      * do create a new user per member on the team (and add their SSH public key to `/home/${USER}/.ssh/authorized_keys`  
+      * do create a new user per member on the team (and add their SSH public key to `/home/${USER}/.ssh/authorized_keys`
 * development setup
   - text editor (one of the following)
         * vim (with [zsh][zsh], [oh-my-zsh][oh-my-zsh], [NERDTree][nerdtree] and [other plugins][my-vim-setup]) \*recommended\*
@@ -136,7 +136,7 @@
 * use [Namecheap][namecheap] for domain name registration
 * use [Google Hangouts][google-hangouts] for team video chat
 * use [Slack][slack] for team chat
-* use [GeoTrust RapidSSL] (cheap) or [Digicert][digicert] (expensive) for SSL security certificates in production \*regardless if application handles financial transactions\*
+* use [GeoTrust RapidSSL][geotrust] (cheap) or [Digicert][digicert] (expensive) for SSL security certificates in production \*regardless if application handles financial transactions\*
 * use [Stripe][stripe] for payments
 
 
@@ -154,7 +154,7 @@
     # optional
     gulp jshint
     npm test
-    
+
     # required
     git add --all
     git commit -m 'fixed opacity of header. closes #1'
@@ -221,3 +221,5 @@
 [ubuntu-security]: https://github.com/niftylettuce/amazon-ec2-node-stack#ubuntu-security-configuration
 [basic-auth]: http://todo.com
 [gulp]: http://gulpjs.com/
+[bower]: http://bower.io/
+[geotrust]: https://www.namecheap.com/security/ssl-certificates/rapidssl/rapidssl.aspx
