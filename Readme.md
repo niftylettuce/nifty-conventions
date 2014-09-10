@@ -130,7 +130,7 @@
 * use [Compose][compose] for MongoDB hosting
 * use [RedisToGo][redis-to-go] for Redis hosting
 * use [CDN-hosted assets][cdn-hosted-assets] on Amazon [S3][amazon-s3] and [CloudFront][amazon-cloudfront]
-* write log files on server and use [logrotate][logrotate]
+* write log files on server and use [logrotate][logrotate] (and tail logs over SSH with `tail -f /var/log/something.log`)
 * use [upstart][upstart] for node processes on the server
 * use [Amazon Route 53][amazon-route-53] for DNS hosting
 * use [Namecheap][namecheap] for domain name registration
