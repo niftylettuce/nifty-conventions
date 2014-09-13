@@ -45,7 +45,7 @@
     ```js
     // good
     if (foo)
-      return getBar("good");
+      return getBar('good');
 
     // bad
     if ( foo )
