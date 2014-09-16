@@ -14,6 +14,7 @@
 
 ## code guidelines
 
+* inherits @felixge's [node-style-guide][node-style-guide]
 * 2 spaces (no tabs)
 * semi-colons \*optional\*
   - do use [uglify][uglify] for production deployments
@@ -50,6 +51,19 @@
     // bad
     if ( foo )
       return getBar( "bad" );
+
+    // good
+    if (foo) {
+      return getBar('good');
+    }
+    getBar('good-two');
+
+    // bad
+    if (foo) {
+      getBar('bad')
+    } else {
+      getBar('bad-two')
+    }
 
     ```
 
@@ -223,3 +237,4 @@
 [gulp]: http://gulpjs.com/
 [bower]: http://bower.io/
 [geotrust]: https://www.namecheap.com/security/ssl-certificates/rapidssl/rapidssl.aspx
+[node-style-guide]: https://github.com/felixge/node-style-guide
