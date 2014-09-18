@@ -24,9 +24,7 @@
 * peer-review occasionally \*optional for solo projects\*
   - do review other's code when merging required
   - do comment on commits and follow-up if needed
-* pull requests
-  - do use pull-requests on public open-source repos
-  - _do not use pull-requests on private team repos_
+* use pull requests when working with teams
 * always return early (you don't always need brackets `{}`)
 
     ```js
