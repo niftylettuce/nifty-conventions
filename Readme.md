@@ -227,7 +227,7 @@
 [travis-ci]: http://travis-ci.org
 [coveralls]: https://coveralls.io
 [istanbul]: https://gotwarlost.github.io/istanbul/
-[mocha]: https://visionmedia.github.io/mocha/
+[mocha]: https://mochajs.org/
 [chai]: http://chaijs.com/
 [sinon-chai]: https://github.com/domenic/sinon-chai
 [ubuntu-security]: https://github.com/niftylettuce/amazon-ec2-node-stack#ubuntu-security-configuration
